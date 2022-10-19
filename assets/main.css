@@ -67,8 +67,9 @@ body{
 }
 
 .form{
-    position: absolute;
-    bottom: 0;
+    position: sticky;
+    bottom: 0px;
+    top: 750px;
     display: flex;
     justify-content: flex-start;
     align-items: center;

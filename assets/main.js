@@ -2,6 +2,7 @@ const socket = io()
 const messages = document.querySelector('.messages')
 const form = document.querySelector('.form')
 const input = document.querySelector('.input')
+const chat = document.querySelector('.chat-container')
 const nickName = document.querySelector('.nick-name')
 
 const userName = prompt(`Ваше имя:`)
@@ -33,4 +34,5 @@ socket.on('chat message', (data) => {
   avatar.classList.add('avatar')
   item.appendChild(avatar)
   messages.appendChild(item)
+  chat.scrollTo(0, chat.scrollHeight)
 })
