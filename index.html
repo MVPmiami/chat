@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chat</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <ul class="messages">
+        <!--<li class="message">
+          <span class="name">Алексей</span>
+          <p class="text">
+            1asdasdasdasdsadasdasdasdadad
+          </p>
+        </li>-->
+      </ul>
+
+      <form class="form">
+        <div class="nick-name"></div>
+        <input type="text" class="input" autocomplete="off" />
+        <button class="btn">Отправить</button>
+      </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

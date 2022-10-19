@@ -1,0 +1,106 @@
+body{
+    background-color: #172763;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container{
+    overflow-y: scroll;
+    scrollbar-width: none;
+    position: relative;
+    top: 100px;
+    left: calc(50% - 400px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 800px;
+    height: 800px;
+    border: 3px solid rgb(182, 224, 222);
+    border-radius: 10px;
+    background-image: url("https://phonoteka.org/uploads/posts/2022-01/1642742255_2-phonoteka-org-p-fon-dlya-chata-v-vk-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.messages{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.message{
+    position: relative;
+    word-break: break-all;
+    background-color: #3b7d85;
+    color: #7fffd4;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px 0 10px 0;
+    max-width: 500px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.name{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: #1d2bc2;
+}
+.text{
+
+}
+
+.form{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+}
+
+.nick-name {
+    background-color: #3b7d85;
+    color: aquamarine;
+    min-height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.input{
+    min-height: 50px;
+    width: 520px;
+    border:none;
+    outline:none;
+    padding:0 10px;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #1b5184;
+    color: #7fffd4;
+}
+
+.btn{
+    min-height: 50px;
+    width: 110px;
+    border: none;
+    outline: none;
+    background-color: #3b7d85;
+    color:#1d2bc2;
+    transition: 0.3s ease-in-out;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn:hover {
+    font-size: 18px;
+    color: #7fffd4;
+    transition: 0.3s ease-in-out;
+}
