@@ -17,7 +17,7 @@ form.addEventListener('submit', (e) => {
 })
 
 socket.on('chat message', (data) => {
-  console.log(data)
+  let firstSymbol = data.name.substring(0, 1)
   const item = document.createElement('li')
   item.classList.add('message')
   const name = document.createElement('span')
@@ -28,5 +28,9 @@ socket.on('chat message', (data) => {
   text.innerHTML = data.message
   text.classList.add('text')
   item.appendChild(text)
+  const avatar = document.createElement('div')
+  avatar.innerHTML = firstSymbol
+  avatar.classList.add('avatar')
+  item.appendChild(avatar)
   messages.appendChild(item)
 })
