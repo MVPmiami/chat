@@ -9,7 +9,6 @@ const webhook = new Discord.WebhookClient({
 })
 require('dotenv').config()
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
-webhook.send('hi')
 const PORT = process.env.PORT || 5000
 app.use(express.static(__dirname + `/assets`))
 
@@ -23,7 +22,7 @@ io.on('connection', (socket) => {
       message: data.message,
       name: data.name,
     })
-    //webhook.send(`${data.name} : ${data.message}`)
+    webhook.send(`${data.name} : ${data.message}`)
   })
 })
 
