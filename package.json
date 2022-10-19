@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "build": "browserify ./assets/main.js -o bundle.js"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
